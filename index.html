@@ -104,6 +104,32 @@
             letter-spacing: 0.5px;
         }
 
+        /* VIDEO IKLAN */
+        .video-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 340px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+            background: #000;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         /* IMAGE SLIDER */
         .slider-wrapper {
             position: relative;
@@ -438,7 +464,21 @@
             </div>
         </div>
 
-        <!-- IMAGE SLIDER (sesuai dengan fail gambar1.jpeg.jpeg anda) -->
+        <!-- BAHAGIAN VIDEO IKLAN -->
+        <div class="video-card">
+            <div class="section-title" style="margin-bottom: 8px;">🎬 Sedap Gila! Tengok Video Ini:</div>
+            <p style="font-size: 0.88rem; color: #555; margin-bottom: 14px;">
+                Balik sekolah terus nikmati kelazatan aiskrim coklat pekat & rangup!
+            </p>
+            <div class="video-container">
+                <video controls autoplay muted loop playsinline>
+                    <source src="promo.mp4" type="video/mp4">
+                    Pelayar web anda tidak menyokong paparan video ini.
+                </video>
+            </div>
+        </div>
+
+        <!-- IMAGE SLIDER -->
         <div class="slider-wrapper">
             <div class="slides-track" id="sliderTrack">
                 <div class="slide"><img src="gambar1.jpeg.jpeg" alt="Aiskrim Sawanah Koko 1"></div>
